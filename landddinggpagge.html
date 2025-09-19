@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Concert Tickets</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #222; background: #f9f9f9; }
+    img { max-width: 100%; display: block; }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      color: white; text-align: center; padding: 5rem 1rem;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 1rem; }
+    header p { font-size: 1.2rem; margin-bottom: 2rem; }
+    header .btn {
+      background: #ff4757; color: white; padding: 1rem 2rem; border: none; border-radius: 50px;
+      font-size: 1.1rem; cursor: pointer; transition: background .3s ease;
+    }
+    header .btn:hover { background: #e84118; }
+
+    section { padding: 4rem 1rem; max-width: 1200px; margin: auto; }
+
+    .features {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;
+    }
+    .feature-card {
+      background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 5px 15px rgba(0,0,0,.1); text-align: center;
+      transition: transform .3s ease;
+    }
+    .feature-card:hover { transform: translateY(-5px); }
+    .feature-card h3 { margin: 1rem 0; font-size: 1.3rem; }
+    .feature-card p { color: #555; }
+
+    .pricing {
+      text-align: center;
+    }
+    .pricing h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+    .price-box {
+      display: inline-block; background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 5px 15px rgba(0,0,0,.1);
+      max-width: 350px; width: 100%;
+    }
+    .price { font-size: 2.5rem; color: #ff4757; margin: 1rem 0; }
+    .price-box ul { list-style: none; margin-bottom: 2rem; }
+    .price-box li { margin: .5rem 0; }
+    .price-box .btn { background: #ff4757; color: white; padding: 1rem 2rem; border: none; border-radius: 50px; font-size: 1.1rem; cursor: pointer; transition: background .3s ease; }
+    .price-box .btn:hover { background: #e84118; }
+
+    footer {
+      text-align: center; padding: 2rem 1rem; background: #222; color: #ddd; font-size: .9rem;
+    }
+    footer a { color: #ff4757; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Experience the Live Music Magic</h1>
+    <p>Get your ticket now and join us for an unforgettable night of music, lights, and energy.</p>
+    <button class="btn">Buy Tickets</button>
+  </header>
+
+  <section>
+    <div class="features">
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/100/ff4757/concert.png" alt="Live Bands"/>
+        <h3>Live Bands</h3>
+        <p>Enjoy performances from top artists and local talent all in one electrifying event.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/100/ff4757/speaker.png" alt="Immersive Sound"/>
+        <h3>Immersive Sound</h3>
+        <p>High-quality sound systems to make sure you feel every beat and every note.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/100/ff4757/party-balloons.png" alt="Unforgettable Atmosphere"/>
+        <h3>Unforgettable Atmosphere</h3>
+        <p>A night filled with energy, lights, and unforgettable moments you’ll cherish.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Ticket Pricing</h2>
+    <div class="price-box">
+      <h3>General Admission</h3>
+      <div class="price">$49</div>
+      <ul>
+        <li>Access to all performances</li>
+        <li>Free drink included</li>
+        <li>Open floor experience</li>
+      </ul>
+      <button class="btn">Get Your Ticket</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Live Concert. All Rights Reserved. | <a href="#">Contact Us</a></p>
+  </footer>
+</body>
+</html>
